@@ -45,23 +45,29 @@ Avant de commencer, vous aurez besoin de :
     git clone https://github.com/votre-utilisateur/LiveDMN
     cd ~/LiveDMN
 
-### 2. Installer les dépendances
+### 2. Lancer le service de la base de donnée
+
+    sudo systemctl start postgresql
+
+    mot de passe: password
+    
+### 3. Installer les dépendances
 
     npm install typescript
 
-### 3. Compiler le projet TypeScript
+### 4. Compiler le projet TypeScript
 
     npx tsc
 
-### 4. Démarrer le backend (dans un premier terminal)
+### 5. Démarrer le backend (dans un premier terminal)
 
     npm run backend
 
-### 5. Démarrer le frontend (dans un second terminal)
+### 6. Démarrer le frontend (dans un second terminal)
 
     npm run frontend
 
-### 6. Accédez à l'application
+### 7. Accédez à l'application
 
     http://localhost:8080/LiveDMN.html
 
