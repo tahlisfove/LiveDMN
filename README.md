@@ -204,10 +204,13 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 
         psql -h localhost -U postgres -d request
 
-3. Lors de la connexion, il vous sera demandé de saisir le mot de passe. Le mot de passe est : password
-4. Une fois connecté, vous pouvez exécuter des requêtes SQL. Par exemple :
+3. Lors de la connexion, il vous sera demandé de saisir le mot de passe.
+   
+        password
+   
+5. Une fois connecté, vous pouvez exécuter des requêtes SQL. Par exemple :
 
-        SELECT * FROM request;
+        SELECT * FROM request_log;
 
 #### Exemple de requête :
 | id  | source        | numValues | extractedData                        | requestTime            |
