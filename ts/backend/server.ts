@@ -27,7 +27,7 @@ async function clearRequestLogTable(): Promise<void> {
     {
       type: 'confirm',
       name: 'clearTable',
-      message: '\nDo you want to clear the "request_log" table?',
+      message: '\nDo you want to clear the table?',
       default: false,
     },
   ]);
