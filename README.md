@@ -248,7 +248,7 @@ La page utilisateur s'ouvrira.
 
 Dans l'interface frontend, vous pouvez choisir un jeu de données à traiter depuis un menu déroulant (\`select\`). Vous pouvez également télécharger ce jeu de données. Une fois téléchargé, un message de succès apparaît et un message est affiché dans le terminal.
 
-![terminal](img/extract_zip_terminal.png)
+![terminal](img/extract_zip_terminal.png)<br>
 ![frontend](img/no_csv.png)
 
 <br>
@@ -257,7 +257,7 @@ Dans l'interface frontend, vous pouvez choisir un jeu de données à traiter dep
 
 Le bouton "Randomize" devient cliquable après avoir téléchargé un fichier. Cependant, si vous changez de dataset sans avoir téléchargé un fichier, ce bouton ne sera pas disponible.
 
-![frontend](img/window_file.png)
+![frontend](img/window_file.png)<br>
 ![frontend](img/yes_csv.png)
 
 <br>
@@ -266,7 +266,7 @@ Le bouton "Randomize" devient cliquable après avoir téléchargé un fichier. C
 
 Choisissez un fichier à traiter ainsi que le nombre de données à randomiser. Une fois le processus terminé, un message de succès s'affiche, ainsi qu'un message dans le terminal.
 
-![frontend](img/after_randomized_terminal.png)
+![frontend](img/after_randomized_terminal.png)<br>
 ![frontend](img/window_randomized.png)
 
 <br>
@@ -275,7 +275,7 @@ Choisissez un fichier à traiter ainsi que le nombre de données à randomiser. 
 
 Une fois la randomisation terminée, les valeurs d'entrée sont affichées dans le terminal. (Cette option a été désactivée par défaut car elle peut être illisible pour de grandes valeurs, mais vous pouvez l'activer en définissant \`"logging": true\` dans le fichier \`data-source.ts\`.)
 
-![terminal](img/insert_database_terminal.png)
+![terminal](img/insert_database_terminal.png)<br>
 ![frontend](img/frontend_randomized.png)
 
 <br>
