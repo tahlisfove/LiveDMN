@@ -45,8 +45,6 @@ Avant de commencer, vous aurez besoin de :
     git clone https://github.com/votre-utilisateur/LiveDMN
     cd ~/LiveDMN
 
-<br>
-
 ### 2. Installer les dépendances
 
     npm install typescript
