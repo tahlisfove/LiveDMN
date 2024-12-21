@@ -49,10 +49,18 @@ Avant de commencer, vous aurez besoin de :
 
     npm install typescript
 
-### 3. Lancer le service de la base de donnée
+### 3. Installer le service de la base de donnée (si ce n'est pas déja fait)
 
-    sudo systemctl start postgresql
-    mot de passe: password
+    sudo apt install postgresql postgresql-contrib -y
+
+### 3. Créer la base de donné et autorisé l'acces
+
+    sudo -u postgres psql
+
+    postgres=# ALTER USER postgres PASSWORD 'password';
+    postgres=# CREATE DATABASE request;
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE request TO postgres;
+    postgres=# \q
 
 ### 4. Compiler le projet TypeScript
 
@@ -199,7 +207,7 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 3. Lors de la connexion, il vous sera demandé de saisir le mot de passe. Le mot de passe est : password
 4. Une fois connecté, vous pouvez exécuter des requêtes SQL. Par exemple :
 
-        SELECT * FROM request_log;
+        SELECT * FROM request;
 
 #### Exemple de requête :
 | id  | source        | numValues | extractedData                        | requestTime            |
@@ -223,7 +231,7 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 
 ### 2. Connexion au Backend
 
-Une fois connecté au backend, le système vous proposera de vider la table \`request_log\`. Vous devrez faire un choix via le terminal, "y" ou "n".
+Une fois connecté au backend, le système vous proposera de vider la table \`request\`. Vous devrez faire un choix via le terminal, "y" ou "n".
 
 ![terminal](img/database_setup_terminal.png)
 
