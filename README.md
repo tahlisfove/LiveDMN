@@ -61,7 +61,7 @@ Avant de commencer, vous aurez besoin de :
 
     npm run frontend
 
-### 7. Accédez à l'application
+### 6. Accédez à l'application
 
     http://localhost:8080/LiveDMN.html
 
@@ -204,13 +204,111 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 
 <br><br>
 
-## 4. Test du système
+## 5. Test du système
 
+### 1. Installer les dépendances et démarrer le backend
 
+    npm install typescript
+    npx tsc
+    npm run backend
+    
+![terminal](img/run_backend.png)
+
+<br>
+
+### 2. Connexion au Backend
+
+Une fois connecté au backend, le système vous proposera de vider la table \`request_log\`. Vous devrez faire un choix via le terminal, "y" ou "n".
+
+![terminal](img/database_setup_terminal.png)
+
+<br>
+
+### 3. Démarrer le frontend
+
+    npm run frontend
+    
+![terminal](img/run_frontend.png)
+
+<br>
+
+### 4. Accéder à l'application Frontend
+
+Ouvrez votre navigateur et accédez à l'adresse suivante :
+
+    http://localhost:8080/LiveDMN.html
+
+La page utilisateur s'ouvrira.
+
+![frontend](img/frontend.png)
+
+<br>
+
+### 5. Sélectionner un Dataset
+
+Dans l'interface frontend, vous pouvez choisir un jeu de données à traiter depuis un menu déroulant (\`select\`). Vous pouvez également télécharger ce jeu de données. Une fois téléchargé, un message de succès apparaît et un message est affiché dans le terminal.
+
+![terminal](img/extract_zip_terminal.png)
+![frontend](img/no_csv.png)
+
+<br>
+
+### 6. Bouton "Randomize"
+
+Le bouton "Randomize" devient cliquable après avoir téléchargé un fichier. Cependant, si vous changez de dataset sans avoir téléchargé un fichier, ce bouton ne sera pas disponible.
+
+![frontend](img/window_file.png)
+![frontend](img/yes_csv.png)
+
+<br>
+
+### 7. Randomiser les Données
+
+Choisissez un fichier à traiter ainsi que le nombre de données à randomiser. Une fois le processus terminé, un message de succès s'affiche, ainsi qu'un message dans le terminal.
+
+![frontend](img/after_randomized.png)
+![frontend](img/window_randomized.png)
+
+<br>
+
+### 8. Affichage des Valeurs
+
+Une fois la randomisation terminée, les valeurs d'entrée sont affichées dans le terminal. (Cette option a été désactivée par défaut car elle peut être illisible pour de grandes valeurs, mais vous pouvez l'activer en définissant \`"logging": true\` dans le fichier \`data-source.ts\`.)
+
+![terminal](img/insert_database_terminal.png)
+![frontend](img/frontend_randomized.png)
+
+<br>
+
+### 9. Télécharger le Fichier Randomisé
+
+Un bouton vous permet de télécharger le dernier fichier généré après la randomisation.
+
+![frontend](img/file_downloaded.png)
+
+<br>
+
+### 10. Vérification des Données dans la Base
+
+Vous pouvez également vérifier les valeurs enregistrées dans la base de données pour vous assurer que la randomisation a bien été effectuée.
+
+- Base de données vide :
+
+![database](img/database_empty.png)
+
+- Base de données remplie :
+
+![database](img/database_full.png)
+
+<br>
+
+### 11. Fichiers Générés
+
+Tous les fichiers générés (JavaScript, CSV et JSON) sont disponibles dans le dossier \`dist/\`, généré à la racine du projet lors de la compilation. Si vous souhaitez libérer de l'espace ou retrouver ces fichiers, vous pouvez supprimer ce dossier.
 
 <br><br>
 
-## 5. Limitations et Améliorations
+## 6. Limitations et Améliorations
 
 ### Limitations
 
@@ -224,7 +322,7 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 
 <br><br>
 
-## 6. Auteur
+## 7. Auteur
 
 Projet développé par Christoph Samuel.
 
