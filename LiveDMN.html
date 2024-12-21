@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata and Title -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LiveDMN</title>
+
+        <!-- Link to external CSS styles -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicon for the website -->
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1>LiveDMN App</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Controls Section -->
+            <section class="controls">
+                <!-- Dropdown to choose the data source -->
+                <label for="data-source">Choose Data Source:</label>
+                <select id="data-source">
+                    <option value="">Choose a data source</option>
+                    <option value="openfoodfacts">OpenFoodFacts</option>
+                    <option value="nudger">Nudger</option>
+                    <option value="job">Job</option>
+                </select>
+
+                <!-- Button to download data -->
+                <button id="download-data" disabled>Download</button>
+
+                <!-- Loading message displayed during the download -->
+                <div id="loading-message" style="display: none;">
+                    <p>Downloading...</p>
+                </div>
+
+                <!-- Input to specify the number of randomized rows -->
+                <label for="numValues">Number of data to randomize:</label>
+                <input type="number" id="num-randomize" min="1" max="100" value="10">
+
+                <!-- Button to trigger data randomization -->
+                <button id="randomize-data">Randomize Data</button>
+            </section>
+
+            <!-- Section to display the randomized JSON data -->
+            <div id="csv_randomized" style="display: none;">
+                <!-- Preformatted block for JSON output -->
+                <pre id="json-output" style="white-space: pre-wrap;"></pre>
+            </div>               
+            
+            <!-- Button to download the randomized data file -->
+            <button id="download-randomized-file" style="display: none;">Download Randomized File</button>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>LiveDMN &copy; 2024</p>
+            <p>Samuel Christoph - M2 TI</p>
+        </footer>
+
+        <!-- Link to external JavaScript file -->
+        <script src="dist/frontend/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "livedmn",
+  "version": "1.0.0",
+  "scripts": {
+    "backend": "npx ts-node ts/backend/server.ts",
+    "frontend": "npx http-server -p 8080"
+  },
+  "dependencies": {
+    "@types/csv-stringify": "^1.4.3",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "csv-stringify": "^6.5.2",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "inquirer": "^12.3.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^3.11.5",
+    "papaparse": "^5.4.1",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20",
+    "yauzl": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "@types/papaparse": "^5.3.15",
+    "@types/yauzl": "^2.10.3",
+    "http-server": "^14.1.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  }
+}
