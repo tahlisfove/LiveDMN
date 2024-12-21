@@ -266,7 +266,7 @@ Le bouton "Randomize" devient cliquable après avoir téléchargé un fichier. C
 
 Choisissez un fichier à traiter ainsi que le nombre de données à randomiser. Une fois le processus terminé, un message de succès s'affiche, ainsi qu'un message dans le terminal.
 
-![frontend](img/after_randomized.png)
+![frontend](img/after_randomized_terminal.png)
 ![frontend](img/window_randomized.png)
 
 <br>
