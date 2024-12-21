@@ -200,7 +200,7 @@ Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistre
 | id  | source        | numValues | extractedData                        | requestTime            |
 | --- | ------------- | --------- | ------------------------------------ | ---------------------- |
 | 1   | openfoodfacts | 100       | `[{"key":"value"}...]`               | 2024-12-21 10:00:00+00 |
-| 2   | job           | 50        | `[{"key":"value"}...]`               |                        |
+| 2   | job           | 50        | `[{"key":"value"}...]`               | 2024-12-21 10:23:00+00 |
 
 <br><br>
 
