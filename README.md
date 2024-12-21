@@ -42,7 +42,7 @@ Avant de commencer, vous aurez besoin de :
 
 ### 1. Cloner le projet
 
-    git clone https://github.com/votre-utilisateur/LiveDMN
+    git clone https://github.com/tahlisfove/LiveDMN
     cd ~/LiveDMN
 
 ### 2. Installer les dépendances
