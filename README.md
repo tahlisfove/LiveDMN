@@ -180,6 +180,30 @@ Les logs des requêtes sont automatiquement enregistrés dans une base de donné
 
 <br><br>
 
+## 4. Accès à la base de données
+
+Vous pouvez accéder à la base de données PostgreSQL utilisée pour enregistrer les logs des requêtes. Voici les étapes pour vous connecter et interroger la base de données :
+
+### Étapes pour accéder à la base de données
+
+1. Ouvrez un terminal.
+2. Exécutez la commande suivante pour vous connecter à la base de données
+
+        psql -h localhost -U postgres -d request
+
+3. Lors de la connexion, il vous sera demandé de saisir le mot de passe. Le mot de passe est : password
+4. Une fois connecté, vous pouvez exécuter des requêtes SQL. Par exemple :
+
+        SELECT * FROM request_log;
+
+#### Exemple de requête :
+| id  | source        | numValues | extractedData                        | requestTime            |
+| --- | ------------- | --------- | ------------------------------------ | ---------------------- |
+| 1   | openfoodfacts | 100       | `[{"key":"value"}...]`               | 2024-12-21 10:00:00+00 |
+| 2   | job           | 50        | `[{"key":"value"}...]`               |                        |
+
+<br><br>
+
 ## 4. Test du système
 
 
