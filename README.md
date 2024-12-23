@@ -49,11 +49,11 @@ Avant de commencer, vous aurez besoin de :
 
     npm install typescript
 
-### 3. Installer le service de la base de donnée (si ce n'est pas déja fait)
+### 3. Installer le service de la base de données (si ce n'est pas déjà fait)
 
     sudo apt install postgresql postgresql-contrib -y
 
-### 3. Créer la base de donnés et autoriser l'accès
+### 4. Créer la base de données et autoriser l'accès
 
     sudo -u postgres psql
 
@@ -62,19 +62,19 @@ Avant de commencer, vous aurez besoin de :
     postgres=# GRANT ALL PRIVILEGES ON DATABASE request TO postgres;
     postgres=# \q
 
-### 4. Compiler le projet TypeScript
+### 5. Compiler le projet TypeScript
 
     npx tsc
 
-### 5. Démarrer le backend (dans un premier terminal)
+### 6. Démarrer le backend (dans un premier terminal)
 
     npm run backend
 
-### 6. Démarrer le frontend (dans un second terminal)
+### 7. Démarrer le frontend (dans un second terminal)
 
     npm run frontend
 
-### 7. Accédez à l'application
+### 8. Accédez à l'application
 
     http://localhost:8080/LiveDMN.html
 
