@@ -53,7 +53,7 @@ Avant de commencer, vous aurez besoin de :
 
     sudo apt install postgresql postgresql-contrib -y
 
-### 3. Créer la base de donné et autorisé l'acces
+### 3. Créer la base de donnés et autoriser l'accès
 
     sudo -u postgres psql
 
